@@ -75,16 +75,18 @@ This document outlines a branching strategy for effective collaboration, code qu
 
 ### Branching Diagram
 
+```plaintext
 main
-│
-┌─── staging
-│ │
-│ ├─── feature/add-login (PR → staging)
-│ │
-│ ├─── feature/ui-update (PR → staging)
-│ │
-│ └─── hotfix/fix-login-bug (PR → main & staging)
+ │
+ └─── staging
+       │
+       ├─── feature/add-login      (PR → staging)
+       │
+       ├─── feature/ui-update      (PR → staging)
+       │
+       └─── hotfix/fix-login-bug   (PR → main & staging)
 
+```
 ### Best Practices
 
 - **Descriptive Branch Names:**
